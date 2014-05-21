@@ -1,0 +1,19 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  '.tree-view':
+      'My SFTP-Map to remote': 'sftp-deployment:maptoremote'
+  '.overlayer':
+      'My SFTP-Map to remote': 'sftp-deployment:maptoremote'
+
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'SFTP deployment'
+      'submenu': [
+        { 'label': 'Send single file', 'command': 'sftp-deployment:sendsingle' },
+        { 'label': 'Map to remote', 'command': 'sftp-deployment:maptoremote' }
+      ]
+    ]
+  }
+]
