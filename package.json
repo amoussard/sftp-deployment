@@ -1,11 +1,13 @@
 {
   "name": "SFTP-deployment",
-  "main": "./lib/sftp-deployment",
+  "main": "./lib/sftp-deployment.js",
   "version": "0.0.1",
   "description": "A short description of your package",
   "activationEvents": [
-    "sftp-deployment:sendsingle",
-    "sftp-deployment:maptoremote"
+    "sftp-deployment:mapToRemote",
+    "sftp-deployment:uploadCurrentFile",
+    "sftp-deployment:uploadOpenFiles",
+    "sftp-deployment:downloadCurrentFile"
   ],
   "repository": "https://github.com/atom/sftp-deployment",
   "license": "MIT",
