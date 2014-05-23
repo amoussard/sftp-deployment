@@ -6,7 +6,6 @@ SFTP-Deployment is a package for Atom.io using [SSH2 client](https://github.com/
 
 ![SFTP-deployment](https://atom.io/assets/packages-d6c259ff67b995961012620be1e26678.gif "SFTP-deployment")
 
-
 ##Features
 
 ###Workflows
