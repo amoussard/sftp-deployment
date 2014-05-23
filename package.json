@@ -1,21 +1,37 @@
 {
   "name": "SFTP-deployment",
-  "main": "./lib/sftp-deployment.js",
-  "version": "0.0.1",
   "description": "A package which allow you to upload and download files with SFTP protocol",
+  "version": "0.0.1",
+  "author": {
+    "name": "Ellipsis Team",
+    "email": "axel.moussard@gmail.com"
+  },
+  "homepage": "https://github.com/amoussard/sftp-deployment",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/amoussard/sftp-deployment.git"
+  },
+  "bugs": {
+    "url": "https://github.com/amoussard/sftp-deployment/issues"
+  },
+  "main": "./lib/sftp-deployment.js",
   "activationEvents": [
     "sftp-deployment:mapToRemote",
     "sftp-deployment:uploadCurrentFile",
     "sftp-deployment:uploadOpenFiles",
     "sftp-deployment:downloadCurrentFile"
   ],
-  "repository": "https://github.com/atom/sftp-deployment",
-  "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
   },
   "dependencies": {
     "ssh2": "^0.2.23",
     "MD5": "^1.2.1"
-  }
+  },
+  "keywords": [
+    "atom",
+    "package",
+    "sftp"
+  ],
+  "license": "MIT"
 }
