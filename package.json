@@ -1,8 +1,8 @@
 {
   "name": "SFTP-deployment",
   "main": "./lib/sftp-deployment.js",
-  "version": "0.0.2",
-  "description": "A short description of your package",
+  "version": "0.0.1",
+  "description": "A package which allow you to upload and download files with SFTP protocol",
   "activationEvents": [
     "sftp-deployment:mapToRemote",
     "sftp-deployment:uploadCurrentFile",
