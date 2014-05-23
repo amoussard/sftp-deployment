@@ -9,7 +9,6 @@
     'SFTP - Upload current file': 'sftp-deployment:uploadCurrentFile'
     'SFTP - Download current file': 'sftp-deployment:downloadCurrentFile'
 
-
 'menu': [
   {
     'label': 'Packages'
