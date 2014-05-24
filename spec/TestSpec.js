@@ -7,5 +7,9 @@ describe('Array', function(){
     it('should return the index when present', function(){
 
     });
+
+    it('should return the index when present', function(){
+
+    });
   });
 });
