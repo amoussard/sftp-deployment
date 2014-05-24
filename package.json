@@ -24,9 +24,17 @@
   "engines": {
     "atom": ">0.50.0"
   },
+  "scripts": {
+    "test": "make test"
+  },
   "dependencies": {
     "ssh2": "^0.2.23",
-    "MD5": "^1.2.1"
+    "MD5": "^1.2.1",
+    "util": "*"
+  },
+  "devDependencies": {
+    "should": "latest",
+    "coveralls": "2.3.0"
   },
   "keywords": [
     "atom",
