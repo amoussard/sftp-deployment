@@ -1,3 +1,5 @@
+[![Coverage Status](https://img.shields.io/coveralls/amoussard/sftp-deployment.svg)](https://coveralls.io/r/amoussard/sftp-deployment)
+
 #SFTP-Deployment for Atom.io
 
 Spend less time managing file transfers and more time coding. SFTP support for Atom.io to send and receive files directly in your server.
