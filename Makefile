@@ -1,4 +1,4 @@
-SRC = lib/**/*.js
+SRC = lib
 TESTS = spec/*Spec.js
 REPORTER = spec
 COVERAGE_REPORT = ./coverage/lcov.info
