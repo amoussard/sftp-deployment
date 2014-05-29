@@ -1,7 +1,7 @@
 {
   "name": "SFTP-deployment",
   "description": "A package which allow you to upload and download files with FTP/SFTP protocol",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "author": {
     "name": "Ellipsis Team",
     "email": "axel.moussard@gmail.com"
