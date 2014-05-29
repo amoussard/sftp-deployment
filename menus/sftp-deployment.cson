@@ -1,19 +1,19 @@
 # See https://atom.io/docs/latest/creating-a-package#menus for more details
 'context-menu':
   '.editor':
-    'SFTP - Upload current file': 'sftp-deployment:uploadCurrentFile'
-    'SFTP - Download current file': 'sftp-deployment:downloadCurrentFile'
+    'FTP/SFTP - Upload current file': 'sftp-deployment:uploadCurrentFile'
+    'FTP/SFTP - Download current file': 'sftp-deployment:downloadCurrentFile'
   '.tab':
-    'SFTP - Upload open files': 'sftp-deployment:uploadOpenFiles'
+    'FTP/SFTP - Upload open files': 'sftp-deployment:uploadOpenFiles'
   '.tab.active':
-    'SFTP - Upload current file': 'sftp-deployment:uploadCurrentFile'
-    'SFTP - Download current file': 'sftp-deployment:downloadCurrentFile'
+    'FTP/SFTP - Upload current file': 'sftp-deployment:uploadCurrentFile'
+    'FTP/SFTP - Download current file': 'sftp-deployment:downloadCurrentFile'
 
 'menu': [
   {
     'label': 'Packages'
     'submenu': [
-      'label': 'SFTP'
+      'label': 'FTP/SFTP'
       'submenu': [
         { 'label': 'Map to remote...', 'command': 'sftp-deployment:mapToRemote' }
         { 'type': 'separator' }
