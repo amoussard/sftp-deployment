@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/amoussard/sftp-deployment.svg?branch=evol%2F3-upload-selection)](https://travis-ci.org/amoussard/sftp-deployment)
 [![Coverage Status](https://img.shields.io/coveralls/amoussard/sftp-deployment.svg)](https://coveralls.io/r/amoussard/sftp-deployment)
 
 #SFTP-Deployment for Atom.io
