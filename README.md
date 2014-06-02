@@ -14,16 +14,16 @@ SFTP-Deployment is a package for Atom.io using [SSH2 client](https://github.com/
 * Working off of a server
   * Create, edit, rename and delete files
   * Create, rename and delete folders
-* Upload files
-* Download files
+* Upload/Download files
+* Upload/Download folders
 
 ###Compatibility
 * Supports FTP and SFTP servers
-* Password and SSH key auth with SSH agent support
+* Password SSH support
 * Works on Windows, OS X and Linux
 
 ###Integration
-* menu entries and command palette control
+* Menu entries and command palette control
 * File-based configuration (JSON)
 * Colorized output panel with options for automatic hiding
 
@@ -66,13 +66,13 @@ For FTP protocol :
 ##Next Versions
 
 ###Workflows
-* Upload folders, or just the changes since your last commit
-* Download folders
+* Upload just the changes since your last commit
 * See upload/download progress
 
 ###Compatibility
 * Supports FTPS servers
 * Supports both implicit (port 990) and explicit SSL for FTPS connections
+* SSH key auth with SSH agent support
 * Detects and informs about SSH host key changes
 * Can detect changes via Git, Mercurial and SVN
 
@@ -81,7 +81,10 @@ For FTP protocol :
 * Secure password and passphrase entry
 
 ##Version
-* `0.1.1`
+* `0.4.0`
+  * Upload/Download of folders
+  * Refactoring of code
+* `0.3.0`
   * Refactoring of the code
   * Notifications/message system
   * FTP support
