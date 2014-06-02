@@ -8,6 +8,9 @@
   '.tab.active':
     'FTP/SFTP - Upload current file': 'sftp-deployment:uploadCurrentFile'
     'FTP/SFTP - Download current file': 'sftp-deployment:downloadCurrentFile'
+  '.tree-view':
+    'FTP/SFTP - Upload selection': 'sftp-deployment:uploadSelection'
+    'FTP/SFTP - Download selection': 'sftp-deployment:downloadSelection'
 
 'menu': [
   {

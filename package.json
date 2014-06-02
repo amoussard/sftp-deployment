@@ -19,7 +19,9 @@
     "sftp-deployment:mapToRemote",
     "sftp-deployment:uploadCurrentFile",
     "sftp-deployment:uploadOpenFiles",
-    "sftp-deployment:downloadCurrentFile"
+    "sftp-deployment:downloadCurrentFile",
+    "sftp-deployment:uploadSelection",
+    "sftp-deployment:downloadSelection"
   ],
   "engines": {
     "atom": ">0.50.0"
@@ -31,7 +33,8 @@
     "ssh2": "^0.2.23",
     "ftp": "*",
     "MD5": "^1.2.1",
-    "util": "*"
+    "util": "*",
+    "node-dir": "*"
   },
   "devDependencies": {
     "should": "latest",
