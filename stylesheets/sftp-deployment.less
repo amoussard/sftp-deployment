@@ -32,3 +32,31 @@
   .message.success{ color: #26C26A; }
   .message.warning{ color: #FF982D; }
   .message.error{ color: #FF2D2D; }
+
+.sftp-progress-messages{
+  margin: 0;
+  padding: 0;
+  background: #333333;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  width: 20%;
+  z-index: 100;
+}
+  .sftp-progress-messages ul{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    list-style-type: none;
+  }
+    .sftp-progress-messages ul li{
+      margin: 0.3em;
+      padding: 1em;
+      background: #27292B;
+    }
+
+    .sftp-progress-messages ul li.success{ color: #26C26A; }
+    .sftp-progress-messages ul li.warning{ color: #FF982D; }
+    .sftp-progress-messages ul li.in-progress{ color: #188BC4; }
+    .sftp-progress-messages ul li.error{ color: #FF2D2D; }
