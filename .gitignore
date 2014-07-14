@@ -1,4 +1,4 @@
-sftp-config.json
+deployment-config.json
 node_modules
 build
 coverage
