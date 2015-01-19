@@ -1,6 +1,6 @@
 # See https://atom.io/docs/latest/creating-a-package#menus for more details
 'context-menu':
-  '.editor':
+  '.atom-text-editor':
     'FTP/SFTP - Upload current file': 'sftp-deployment:uploadCurrentFile'
     'FTP/SFTP - Download current file': 'sftp-deployment:downloadCurrentFile'
   '.tab':
