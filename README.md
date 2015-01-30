@@ -49,6 +49,8 @@ For SFTP protocol :
   "password": "password",
   "port": "22",
   "remote_path": "/example/path",
+  "ssh_key_file": "~/.ssh/id_rsa"
+  "ssh_key_passphrase": "passphrase"
 }
 ```
 
