@@ -34,7 +34,8 @@
     "ftp": "*",
     "MD5": "^1.2.1",
     "util": "*",
-    "node-dir": "*"
+    "node-dir": "*",
+    "bluebird": "^2.9.16"
   },
   "devDependencies": {
     "should": "latest",
