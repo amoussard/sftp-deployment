@@ -22,7 +22,7 @@
         ]}
         { 'type': 'separator' }
     ]
-    '.tree-view.full-menu': [
+    '.tree-view': [
         { 'type': 'separator' }
         { 'label': 'FTP/SFTP', 'submenu': [
             { 'label': 'Upload selection', 'command': 'sftp-deployment:uploadSelection' }
