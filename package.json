@@ -30,7 +30,7 @@
     "test": "make test"
   },
   "dependencies": {
-    "ssh2": "^0.2.23",
+    "ssh2": "^0.4.4",
     "ftp": "*",
     "MD5": "^1.2.1",
     "util": "*",
