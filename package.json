@@ -17,7 +17,8 @@
     "sftp-deployment:uploadOpenFiles",
     "sftp-deployment:downloadCurrentFile",
     "sftp-deployment:uploadSelection",
-    "sftp-deployment:downloadSelection"
+    "sftp-deployment:downloadSelection",
+    "core:save"
   ],
   "engines": {
     "atom": ">0.50.0"
