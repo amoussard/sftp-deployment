@@ -28,11 +28,12 @@
   },
   "dependencies": {
     "ssh2": "^0.4.4",
-    "ftp": "*",
+    "ftp": "^0.3.9",
     "MD5": "^1.2.1",
     "util": "*",
     "node-dir": "*",
-    "bluebird": "^2.9.16"
+    "bluebird": "^2.9.16",
+    "expand-home-dir": "^0.0.2"
   },
   "devDependencies": {
     "should": "latest",
