@@ -59,7 +59,8 @@ The configuration file *MUST* always be in the root directory of your project.
     "host": "example.com",
     "user": "username",
     "port": "22",
-    "remote_path": "~/.ssh/id_rsa",
+    "remote_path": "/example/path",
+    "sshKeyFile": "~/.ssh/id_rsa",
     "passphrase": "your_passphrase"
 }
 ```
