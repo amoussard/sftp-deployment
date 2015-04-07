@@ -12,11 +12,9 @@ SFTP-Deployment is a package for Atom.io using [SSH2 client](https://github.com/
 ##Features
 
 ###Workflows
-* Working off of a server
-  * Create, edit, rename and delete files
-  * Create, rename and delete folders
-* Upload/Download files
-* Upload/Download folders
+* Upload/Download current file
+* Upload open files (tabs)
+* Upload/Download selection from Tree View
 
 ###Compatibility
 * Supports FTP and SFTP servers
@@ -38,21 +36,36 @@ SFTP-Deployment is a package for Atom.io using [SSH2 client](https://github.com/
 3. Set your ftp/sftp configuration in this file
 4. Use it!
 
-####Example of configuration file:
+The configuration file *MUST* always be in the root directory of your project.
 
-For SFTP protocol :
+###Example of configuration file:
+
+####SFTP with user/password :
 ```
 {
-  "type": "sftp",
-  "host": "example.com",
-  "user": "username",
-  "password": "password",
-  "port": "22",
-  "remote_path": "/example/path",
+    "type": "sftp",
+    "host": "example.com",
+    "user": "username",
+    "password": "password",
+    "port": "22",
+    "remote_path": "/example/path"
 }
 ```
 
-For FTP protocol :
+####SFTP protocol with private key :
+```
+{
+    "type": "sftp",
+    "host": "example.com",
+    "user": "username",
+    "port": "22",
+    "remote_path": "~/.ssh/id_rsa",
+    "passphrase": "your_passphrase"
+}
+```
+The passphrase is optional, only if your key require it.
+
+####FTP protocol :
 ```
 {
   "type": "ftp",
@@ -69,19 +82,19 @@ For FTP protocol :
 ###Workflows
 * Upload just the changes since your last commit
 * See upload/download progress
-
-###Compatibility
-* Supports FTPS servers
-* Supports both implicit (port 990) and explicit SSL for FTPS connections
-* SSH key auth with SSH agent support
-* Detects and informs about SSH host key changes
-* Can detect changes via Git, Mercurial and SVN
+* Synchronize in both directions
 
 ###Integration
 * Keyboard shortcuts
 * Secure password and passphrase entry
 
 ##Version
+* `1.0.0`
+  * Full refactoring of the package
+  * Improve stability
+  * Best error management
+  * Upload on save
+  * Upload/Download selection of files and directories in tree-view
 * `0.4.0`
   * Upload/Download of folders
   * Refactoring of code
