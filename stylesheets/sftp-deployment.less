@@ -6,29 +6,36 @@
 
 .sftp-deployment{}
 
-.sftp-messages{
-  margin: 0;
-  padding: 0;
-  background: #333333;
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  position: absolute;
-  right: 3.5em;
-  top: 3.5em;
-  width: 35%;
-  z-index: 100;
+.sftp-messages,
+.sftp-loader {
+    margin: 0;
+    padding: 0;
+    background: #333333;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    position: absolute;
+    right: 0.5em;
+    top: 3.5em;
+    z-index: 100;
 }
-  .sftp-messages ul{
+
+.sftp-messages ul{
     margin: 0;
     padding: 0;
     position: relative;
     list-style-type: none;
-  }
+}
 
 .message{
-  margin: 0.3em;
-  padding: 1em;
-  background: #27292B;
+    color: white;
+    margin: 0.3em;
+    padding: 1em;
+    background: #27292B;
 }
-  .message.success{ color: #26C26A; }
-  .message.warning{ color: #FF982D; }
-  .message.error{ color: #FF2D2D; }
+
+.message.success{ color: #26C26A; }
+.message.warning{ color: #FF982D; }
+.message.error{ color: #FF2D2D; }
+
+.sftp-loader {
+    display: none;
+}
