@@ -36,7 +36,7 @@ SFTP-Deployment is a package for Atom.io using [SSH2 client](https://github.com/
 3. Set your ftp/sftp configuration in this file
 4. Use it!
 
-The configuration file *MUST* always be in the root directory of your project.
+The configuration file **MUST** always be in the root directory of your project.
 
 ###Example of configuration file:
 
