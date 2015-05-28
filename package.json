@@ -11,7 +11,7 @@
     "url": "https://github.com/amoussard/sftp-deployment/issues"
   },
   "main": "./lib/sftp-deployment.js",
-  "activationEvents": [
+  "activationCommands": [
     "sftp-deployment:mapToRemote",
     "sftp-deployment:uploadCurrentFile",
     "sftp-deployment:uploadOpenFiles",
