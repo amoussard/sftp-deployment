@@ -11,15 +11,15 @@
     "url": "https://github.com/amoussard/sftp-deployment/issues"
   },
   "main": "./lib/sftp-deployment.js",
-  "activationCommands": [
-    "sftp-deployment:mapToRemote",
-    "sftp-deployment:uploadCurrentFile",
-    "sftp-deployment:uploadOpenFiles",
-    "sftp-deployment:downloadCurrentFile",
-    "sftp-deployment:uploadSelection",
-    "sftp-deployment:downloadSelection",
-    "core:save"
-  ],
+  "activationCommands": {
+    "atom-workspace" : "sftp-deployment:mapToRemote",
+    "atom-workspace" : "sftp-deployment:uploadCurrentFile",
+    "atom-workspace" : "sftp-deployment:uploadOpenFiles",
+    "atom-workspace" : "sftp-deployment:downloadCurrentFile",
+    "atom-workspace" : "sftp-deployment:uploadSelection",
+    "atom-workspace" : "sftp-deployment:downloadSelection",
+    "atom-workspace" : "core:save"
+  },
   "engines": {
     "atom": ">0.50.0"
   },
