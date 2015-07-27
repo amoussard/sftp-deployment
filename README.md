@@ -48,7 +48,7 @@ The configuration file **MUST** always be in the root directory of your project.
     "user": "username",
     "password": "password",
     "port": "22",
-    "remote_path": "/example/path"
+    "remotePath": "/example/path"
 }
 ```
 
@@ -59,7 +59,7 @@ The configuration file **MUST** always be in the root directory of your project.
     "host": "example.com",
     "user": "username",
     "port": "22",
-    "remote_path": "/example/path",
+    "remotePath": "/example/path",
     "sshKeyFile": "~/.ssh/id_rsa",
     "passphrase": "your_passphrase"
 }
@@ -74,7 +74,7 @@ The passphrase is optional, only if your key require it.
   "user": "username",
   "password": "password",
   "port": "21",
-  "remote_path": "/example/path"
+  "remotePath": "/example/path"
 }
 ```
 
@@ -89,7 +89,9 @@ The passphrase is optional, only if your key require it.
 * Keyboard shortcuts
 * Secure password and passphrase entry
 
-##Version
+##Versions
+* `1.0.1`
+  * Fix after Atom update
 * `1.0.0`
   * Full refactoring of the package
   * Improve stability
