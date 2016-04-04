@@ -35,7 +35,7 @@
     "util": "*",
     "node-dir": "*",
     "bluebird": "^2.9.16",
-    "expand-home-dir": "^0.0.2",
+    "expand-home-dir": "^0.0.3",
     "atom-space-pen-views": "^2.0.3"
   },
   "devDependencies": {
