@@ -71,7 +71,7 @@ The passphrase is optional, only if your key require it.
 {
   "type": "ftp",
   "host": "example.com",
-  "user": "username",
+  "username": "username",
   "password": "password",
   "port": "21",
   "remotePath": "/example/path"
