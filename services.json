@@ -1,0 +1,22 @@
+{
+  "parameters": {
+    "message_observer.class": "lib/observers/MessageObserver",
+    "console_observer.class": "lib/observers/ConsoleObserver",
+    "deployment_manager.class": "lib/DeploymentManager"
+  },
+  "services": {
+    "message_observer": {
+      "class": "%message_observer.class%"
+    },
+    "console_observer": {
+      "class": "%console_observer.class%"
+    },
+    "deployment_manager": {
+      "class": "%deployment_manager.class%",
+      "calls": [
+        { "method": "registerObserver", "arguments": [ "@message_observer" ] },
+        { "method": "registerObserver", "arguments": [ "@console_observer" ] }
+      ]
+    }
+  }
+}

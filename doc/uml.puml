@@ -1,0 +1,205 @@
+@startuml
+
+package Queue {
+    class Queue {
+        +constructor(maxActive)
+        +addAction(Action action)
+        +execute()
+
+        #init(endCallback, errorCallback)
+        #end()
+        #isFinished()
+        #nextSlotAvailable()
+        #next()
+    }
+    class Action {
+        +execute()
+    }
+
+    Queue -- Action
+}
+
+package Observer {
+    class Observer {
+        +notify()
+    }
+
+    class MessageObserver {
+        {static} MESSAGE_DURATION
+
+        +notify(value, data)
+        #_createMessage(message, classes)
+        #_createErrorMessage(message)
+        #_createWarningMessage(message)
+        #_createSuccessMessage(message)
+        {static} #_showLoader()
+        {static} #_hideLoader()
+    }
+
+    class ConsoleObserver {
+        +notify(value, data)
+    }
+
+    Observer <|-- MessageObserver
+    Observer <|-- ConsoleObserver
+}
+
+package FileSystem {
+    class Node {
+        +constructor(_path, relative)
+        +getPath()
+        +getRelativePath()
+    }
+
+    class File {
+        +getFilename()
+        +getDirectory()
+    }
+
+    class Directory {
+    }
+
+    class FileManager {
+        +getCurrentFile()
+        +getOpenFiles()
+        +getSelection(deep)
+        #_treatPath(_path, results, deep)
+    }
+
+    Node <|-- File
+    Node <|-- Directory
+}
+
+package Connection {
+    class Connection {
+        +constructor(Config config)
+        {abstract} +getConnectionInformations()
+        {abstract} +createRemoteDirectory(directoryPath)
+        +createDirectory(directoryPath)
+        {abstract} #uploadFile(file)
+        {abstract} #downloadFile()
+        +connect()
+        +close()
+        +upload(files)
+        +download(files)
+        {abstract} +extractDistantFiles(node, files)
+        +getTargetFiles(nodes)
+    }
+
+    class SftpConnection {
+        +constructor(Config config)
+        +getConnectionInformations()
+        +createRemoteDirectory(directoryPath)
+        #_openSftp()
+        #_fastPut()
+        #_fastGet()
+        +uploadFile(file)
+        +downloadFile()
+        #_getListDir()
+        +extractDistantFiles(node, files)
+    }
+
+    class FtpConnection {
+        +constructor(Config config)
+        +getConnectionInformations()
+        +createRemoteDirectory(directoryPath)
+        #_put()
+        #_get()
+        +uploadFile(file)
+        +downloadFile()
+        +extractDistantFiles(node, files)
+    }
+
+    class ConnectionFactory {
+        +createConnection(config)
+        +openConnection(config)
+        {static} #_createSftpConnection(config)
+        {static} #_createFtpConnection(config)
+    }
+
+    Connection -- Queue
+    Connection -- SftpConnection
+    Connection -- FtpConnection
+    ConnectionFactory -- Connection
+}
+
+package Configuration {
+    class Config {
+        #type
+        #host
+        #username
+        #password
+        #port
+        #remotePath
+        #uploadOnSave
+        #uploadConfigFile
+        +save()
+    }
+
+    class SftpConfig {
+        #type = 'sftp'
+        #port = 22
+        #sshKeyFile
+        #passphrase
+    }
+
+    class FtpConfig {
+        #type = 'ftp'
+        #port = 21
+    }
+
+    class ConfigFactory {
+        +createConfig(configData)
+        +loadConfig(configPath)
+        {static} #_parseConfigFile(content)
+        {static} +createSftpConfig()
+        {static} +createFtpConfig()
+    }
+
+    Config <|-- SftpConfig
+    Config <|-- FtpConfig
+    ConfigFactory -- Config
+}
+
+package Container {
+    Class Container {
+        #parameters
+        #services
+
+        #_loadFromFile()
+        {static} #_parseJsonSettings(jsonSettings)
+        #_load(settingsFile)
+        #_manageSettings(settings)
+        #_setParameters(parametersList)
+        #_setParameter(name, value)
+        #_setServices(servicesList)
+        #_setService(name, serviceInformations)
+        #_transformElement(element)
+        +bootstrap(settingsFile)
+        +getParameter(parameterName, defaultValue)
+        +get(serviceName)
+    }
+}
+
+class DeploymentManager {
+    #observers
+    #configurationFileName
+
+    +registerObserver(Observer observer)
+    +notifyObservers(value, data)
+    #_upload(files)
+    #_download(nodes)
+    +generateConfigFile()
+    +uploadCurrentFile()
+    +uploadOnSave()
+    +downloadCurrentFile()
+    +uploadOpenFiles()
+    +uploadSelection()
+    +downloadSelection()
+}
+
+DeploymentManager -- Observer
+DeploymentManager -- ConnectionFactory
+DeploymentManager -- ConfigFactory
+
+@enduml
