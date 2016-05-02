@@ -1,11 +1,10 @@
 node_js:
-- "0.10"
+- "5.0"
 language: node_js
 env:
 - COVERALLS_REPO_TOKEN="ckvmICpF1SAKEEXWuEr7zFuV34fKi01LR"
 before_script:
 - npm install -g istanbul
 - npm install -g mocha
-script: make test-cov
-after_success:
-- make coveralls
+- npm install -g gulp
+script: gulp cs
