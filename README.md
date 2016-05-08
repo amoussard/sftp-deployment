@@ -33,19 +33,19 @@ SFTP-Deployment is a package for Atom.io using [SSH2 client](https://github.com/
   * `cmd-shift-p` and search `mapToRemote`
   * Packages menu -> FTP/SFTP -> Map to Remote...
   * Create your own
-3. Set your ftp/sftp configuration in this file
+3. Set your ftp/sftp configuration file `deployment-config.json` in root of project
 4. Use it!
 
 The configuration file **MUST** always be in the root directory of your project.
 
 ###Example of configuration file:
 
-####SFTP with user/password :
+####SFTP with username/password :
 ```
 {
     "type": "sftp",
     "host": "example.com",
-    "user": "username",
+    "username": "username",
     "password": "password",
     "port": "22",
     "remotePath": "/example/path"
@@ -57,7 +57,7 @@ The configuration file **MUST** always be in the root directory of your project.
 {
     "type": "sftp",
     "host": "example.com",
-    "user": "username",
+    "username": "username",
     "port": "22",
     "remotePath": "/example/path",
     "sshKeyFile": "~/.ssh/id_rsa",
