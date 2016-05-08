@@ -7,4 +7,4 @@ gulp.task('eslint', function lintJs() {
         .pipe(eslint.format());
 });
 
-gulp.task('cs', ['eslint']);
+gulp.task('cs', [ 'eslint' ]);

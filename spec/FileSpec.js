@@ -1,6 +1,6 @@
 var assert = require('assert');
 
-var File = require('../lib/filesystem/File');
+var File = require('./File');
 
 describe('File', function() {
   var file = new File('/home/amoussard/test/directory/file.txt');
