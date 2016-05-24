@@ -16,6 +16,21 @@
     right: 0.5em;
     top: 3.5em;
     z-index: 100;
+    .message{
+        color: white;
+        margin: 0.3em;
+        padding: 1em;
+        background: #27292B;
+        &.success{
+          color:#26C26A;
+        }
+        &.warning{
+          color:#FF982D;
+        }
+        &.error{
+          color:#FF2D2D;
+        }
+    }
 }
 
 .sftp-messages ul{
@@ -24,17 +39,6 @@
     position: relative;
     list-style-type: none;
 }
-
-.message{
-    color: white;
-    margin: 0.3em;
-    padding: 1em;
-    background: #27292B;
-}
-
-.message.success{ color: #26C26A; }
-.message.warning{ color: #FF982D; }
-.message.error{ color: #FF2D2D; }
 
 .sftp-loader {
     display: none;
