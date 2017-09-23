@@ -1,30 +1,28 @@
-[![Build Status](https://travis-ci.org/amoussard/sftp-deployment.svg?branch=evol%2F3-upload-selection)](https://travis-ci.org/amoussard/sftp-deployment)
-[![Coverage Status](https://img.shields.io/coveralls/amoussard/sftp-deployment.svg)](https://coveralls.io/r/amoussard/sftp-deployment)
+# Atom SFTP Sync
 
-#SFTP-Deployment for Atom.io
+This is a fork of [Axel Moussard's sftp-deployment](https://github.com/amoussard/sftp-deployment).
 
-Spend less time managing file transfers and more time coding. FTP and SFTP support for Atom.io to send and receive files directly in your server.
+Spend less time managing file transfers and more time coding.
+FTP and SFTP support for Atom.io to send and receive files directly in your server.
 
-SFTP-Deployment is a package for Atom.io using [SSH2 client](https://github.com/mscdex/ssh2) and [Node FTP](https://github.com/mscdex/node-ftp) modules written in pure Javascript for [node.js](http://nodejs.org/).
 
-![SFTP-deployment](https://atom.io/assets/packages-d6c259ff67b995961012620be1e26678.gif "SFTP-deployment")
+## Features
 
-##Features
-
-###Workflows
+### Workflows
 * Upload/Download current file
 * Upload open files (tabs)
 * Upload/Download selection from Tree View
 
-###Compatibility
+### Compatibility
 * Supports FTP and SFTP servers
 * Password SSH support
 * Works on Windows, OS X and Linux
 
-###Integration
+### Integration
 * Menu entries and command palette control
 * File-based configuration (JSON)
 * Colorized output panel with options for automatic hiding
+
 
 ## Installation
 
@@ -38,9 +36,11 @@ SFTP-Deployment is a package for Atom.io using [SSH2 client](https://github.com/
 
 The configuration file **MUST** always be in the root directory of your project.
 
-###Example of configuration file:
 
-####SFTP with user/password :
+## Examples of configuration files
+
+### SFTP with user/password
+
 ```
 {
     "type": "sftp",
@@ -52,7 +52,9 @@ The configuration file **MUST** always be in the root directory of your project.
 }
 ```
 
-####SFTP protocol with private key :
+
+### SFTP protocol with private key
+
 ```
 {
     "type": "sftp",
@@ -64,9 +66,12 @@ The configuration file **MUST** always be in the root directory of your project.
     "passphrase": "your_passphrase"
 }
 ```
+
 The passphrase is optional, only if your key require it.
 
-####FTP protocol :
+
+### FTP protocol
+
 ```
 {
   "type": "ftp",
@@ -78,18 +83,19 @@ The passphrase is optional, only if your key require it.
 }
 ```
 
-##Next Versions
 
-###Workflows
+## Next Versions
+
+### Workflows
 * Upload just the changes since your last commit
 * See upload/download progress
 * Synchronize in both directions
 
-###Integration
-* Keyboard shortcuts
-* Secure password and passphrase entry
 
-##Versions
+## Changelog
+
+* `1.0.3`
+  * Fixes syncing of files in new and nested directories.
 * `1.0.1`
   * Fix after Atom update
 * `1.0.0`
@@ -108,3 +114,4 @@ The passphrase is optional, only if your key require it.
   * ST3 package syntax support
   * bugfix
 * `0.1.0` Build the first atom package
+

@@ -1,14 +1,14 @@
 {
-  "name": "SFTP-deployment",
-  "description": "A package which allow you to upload and download files with FTP/SFTP protocol",
-  "version": "1.0.2",
+  "name": "Atom-SFTP-sync",
+  "description": "Sync local files with a server (fork of sftp-deployment)",
+  "version": "1.0.3",
   "author": {
     "name": "Ellipsis Team",
     "email": "axel.moussard@gmail.com"
   },
-  "repository": "https://github.com/amoussard/sftp-deployment",
+  "repository": "https://github.com/christophgockel/atom-sftp-sync",
   "bugs": {
-    "url": "https://github.com/amoussard/sftp-deployment/issues"
+    "url": "https://github.com/christophgockel/sftp-deployment/issues"
   },
   "main": "./lib/sftp-deployment.js",
   "activationCommands": {
@@ -48,7 +48,8 @@
     "sftp",
     "ftp",
     "remote",
-    "deployment"
+    "deployment",
+    "sync"
   ],
   "license": "MIT"
 }
