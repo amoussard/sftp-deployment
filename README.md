@@ -94,6 +94,8 @@ The passphrase is optional, only if your key require it.
 
 ## Changelog
 
+* `latest`
+  * Fixes syncing of files and directories from the project tree-view
 * `1.0.3`
   * Fixes syncing of files in new and nested directories.
 * `1.0.1`
