@@ -8,17 +8,17 @@
   },
   "repository": "https://github.com/christophgockel/atom-sftp-sync",
   "bugs": {
-    "url": "https://github.com/christophgockel/sftp-deployment/issues"
+    "url": "https://github.com/christophgockel/atom-sftp-sync/issues"
   },
-  "main": "./lib/sftp-deployment.js",
+  "main": "./lib/atom-sftp-sync.js",
   "activationCommands": {
     "atom-workspace": [
-      "sftp-deployment:mapToRemote",
-      "sftp-deployment:uploadCurrentFile",
-      "sftp-deployment:uploadOpenFiles",
-      "sftp-deployment:downloadCurrentFile",
-      "sftp-deployment:uploadSelection",
-      "sftp-deployment:downloadSelection",
+      "atom-sftp-sync:mapToRemote",
+      "atom-sftp-sync:uploadCurrentFile",
+      "atom-sftp-sync:uploadOpenFiles",
+      "atom-sftp-sync:downloadCurrentFile",
+      "atom-sftp-sync:uploadSelection",
+      "atom-sftp-sync:downloadSelection",
       "core:save"
     ]
   },

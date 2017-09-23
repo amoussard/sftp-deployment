@@ -8,17 +8,23 @@ FTP and SFTP support for Atom.io to send and receive files directly in your serv
 
 ## Features
 
+
 ### Workflows
+
 * Upload/Download current file
 * Upload open files (tabs)
 * Upload/Download selection from Tree View
 
+
 ### Compatibility
+
 * Supports FTP and SFTP servers
 * Password SSH support
 * Works on Windows, OS X and Linux
 
+
 ### Integration
+
 * Menu entries and command palette control
 * File-based configuration (JSON)
 * Colorized output panel with options for automatic hiding
@@ -116,4 +122,10 @@ The passphrase is optional, only if your key require it.
   * ST3 package syntax support
   * bugfix
 * `0.1.0` Build the first atom package
+
+
+## Acknowledgments
+
+Shout out to Axel Moussard and the Ellipsis Team for the original [sftp-deployment plugin](https://github.com/amoussard/sftp-deployment)!
+Atom-sftp-sync wouldn't exist without the effort and dedication of the original authors and contributors.
 
