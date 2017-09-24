@@ -1,7 +1,7 @@
 {
   "name": "Atom-SFTP-sync",
   "description": "Sync local files with a server (fork of sftp-deployment)",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "author": {
     "name": "Christoph Gockel",
     "email": "cgockel@8thlight.com"
