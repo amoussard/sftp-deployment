@@ -90,40 +90,6 @@ The passphrase is optional, only if your key require it.
 ```
 
 
-## Next Versions
-
-### Workflows
-* Upload just the changes since your last commit
-* See upload/download progress
-* Synchronize in both directions
-
-
-## Changelog
-
-* `latest`
-  * Fixes syncing of files and directories from the project tree-view
-* `1.0.3`
-  * Fixes syncing of files in new and nested directories.
-* `1.0.1`
-  * Fix after Atom update
-* `1.0.0`
-  * Full refactoring of the package
-  * Improve stability
-  * Best error management
-  * Upload on save
-  * Upload/Download selection of files and directories in tree-view
-* `0.4.0`
-  * Upload/Download of folders
-  * Refactoring of code
-* `0.3.0`
-  * Refactoring of the code
-  * Notifications/message system
-  * FTP support
-  * ST3 package syntax support
-  * bugfix
-* `0.1.0` Build the first atom package
-
-
 ## Acknowledgments
 
 Shout out to Axel Moussard and the Ellipsis Team for the original [sftp-deployment plugin](https://github.com/amoussard/sftp-deployment)!
