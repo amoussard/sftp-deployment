@@ -26,7 +26,8 @@
     "atom": ">=1.20.0"
   },
   "scripts": {
-    "test": "make test"
+    "test": "make test",
+    "lint": "eslint lib"
   },
   "dependencies": {
     "ssh2": "^0.4.4",
@@ -39,8 +40,9 @@
     "atom-space-pen-views": "^2.0.3"
   },
   "devDependencies": {
-    "should": "latest",
-    "coveralls": "2.3.0"
+    "coveralls": "2.3.0",
+    "eslint": "^4.7.2",
+    "should": "latest"
   },
   "keywords": [
     "atom",
