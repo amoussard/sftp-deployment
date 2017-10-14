@@ -31,8 +31,8 @@ describe("ConfigFactory", () => {
 
     factory.parseConfigFile(content).then((connection) => {
       expect(connection.port).toEqual(1234);
-    }).
-      then(done, done);
+    })
+      .then(done, done);
   });
 
   it("rejects invalid config files", (done) => {
@@ -40,8 +40,8 @@ describe("ConfigFactory", () => {
 
     factory.parseConfigFile(invalidContent).catch((error) => {
       expect(error instanceof ConfigurationFileSyntaxErrorException).toBeTruthy();
-    }).
-      then(done, done);
+    })
+      .then(done, done);
   });
 });
 
