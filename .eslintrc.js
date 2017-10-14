@@ -45,7 +45,7 @@ module.exports = {
         "consistent-this": "error",
         "curly": "error",
         "default-case": "error",
-        "dot-location": "error",
+        "dot-location": ["error", "property"],
         "dot-notation": "error",
         "eol-last": "error",
         "eqeqeq": "error",
@@ -54,7 +54,8 @@ module.exports = {
         "func-names": "error",
         "func-style": [
             "error",
-            "declaration"
+            "declaration",
+            {"allowArrowFunctions": true }
         ],
         "generator-star-spacing": "error",
         "global-require": "error",

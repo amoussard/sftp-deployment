@@ -26,7 +26,7 @@
     "atom": ">=1.20.0"
   },
   "scripts": {
-    "test": "make test",
+    "test": "atom --test spec",
     "lint": "eslint lib"
   },
   "dependencies": {
@@ -40,9 +40,7 @@
     "atom-space-pen-views": "^2.0.3"
   },
   "devDependencies": {
-    "coveralls": "2.3.0",
-    "eslint": "^4.7.2",
-    "should": "latest"
+    "eslint": "^4.7.2"
   },
   "keywords": [
     "atom",
