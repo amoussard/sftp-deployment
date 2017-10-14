@@ -35,7 +35,7 @@ FTP and SFTP support for Atom.io to send and receive files directly in your serv
 1. Search `sftp` or `ftp` in the atom package manager
 2. Since the installation is successful, you can generate the configuration file with the command
   * `cmd-shift-p` and search `mapToRemote`
-  * Packages menu -> FTP/SFTP -> Map to Remote...
+  * Packages menu -> SFTP Sync -> Map to Remote...
   * Create your own
 3. Set your ftp/sftp configuration in this file
 4. Use it!

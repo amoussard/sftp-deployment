@@ -1,7 +1,7 @@
 'context-menu':
     'atom-text-editor': [
         { 'type': 'separator' }
-        { 'label': 'FTP/SFTP', 'submenu': [
+        { 'label': 'SFTP Sync', 'submenu': [
             { 'label': 'Upload current file', 'command': 'atom-sftp-sync:uploadCurrentFile' }
             { 'label': 'Download current file', 'command': 'atom-sftp-sync:downloadCurrentFile' }
         ]}
@@ -9,14 +9,14 @@
     ]
     'atom-pane .tab': [
         { 'type': 'separator' }
-        { 'label': 'FTP/SFTP', 'submenu': [
+        { 'label': 'SFTP Sync', 'submenu': [
             { 'label': 'Upload open files', 'command': 'atom-sftp-sync:uploadOpenFiles' }
         ]}
         { 'type': 'separator' }
     ]
     'atom-pane .tab.active': [
         { 'type': 'separator' }
-        { 'label': 'FTP/SFTP', 'submenu': [
+        { 'label': 'SFTP Sync', 'submenu': [
             { 'label': 'Upload current file', 'command': 'atom-sftp-sync:uploadCurrentFile' }
             { 'label': 'Download current file', 'command': 'atom-sftp-sync:downloadCurrentFile' }
         ]}
@@ -24,7 +24,7 @@
     ]
     '.tree-view': [
         { 'type': 'separator' }
-        { 'label': 'FTP/SFTP', 'submenu': [
+        { 'label': 'SFTP Sync', 'submenu': [
             { 'label': 'Upload selection', 'command': 'atom-sftp-sync:uploadSelection' }
             { 'label': 'Download selection', 'command': 'atom-sftp-sync:downloadSelection' }
         ]}
@@ -35,7 +35,7 @@
     {
         'label': 'Packages'
         'submenu': [
-            'label': 'FTP/SFTP'
+            'label': 'SFTP Sync'
             'submenu': [
                 { 'label': 'Map to remote...', 'command': 'atom-sftp-sync:mapToRemote' }
                 { 'type': 'separator' }
