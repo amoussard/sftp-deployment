@@ -1,32 +1,33 @@
 {
-  "name": "SFTP-deployment",
-  "description": "A package which allow you to upload and download files with FTP/SFTP protocol",
-  "version": "1.0.2",
+  "name": "Atom-SFTP-sync",
+  "description": "Sync local files with a server (fork of sftp-deployment)",
+  "version": "2.0.1",
   "author": {
-    "name": "Ellipsis Team",
-    "email": "axel.moussard@gmail.com"
+    "name": "Christoph Gockel",
+    "email": "cgockel@8thlight.com"
   },
-  "repository": "https://github.com/amoussard/sftp-deployment",
+  "repository": "https://github.com/christophgockel/atom-sftp-sync",
   "bugs": {
-    "url": "https://github.com/amoussard/sftp-deployment/issues"
+    "url": "https://github.com/christophgockel/atom-sftp-sync/issues"
   },
-  "main": "./lib/sftp-deployment.js",
+  "main": "./lib/atom-sftp-sync.js",
   "activationCommands": {
     "atom-workspace": [
-      "sftp-deployment:mapToRemote",
-      "sftp-deployment:uploadCurrentFile",
-      "sftp-deployment:uploadOpenFiles",
-      "sftp-deployment:downloadCurrentFile",
-      "sftp-deployment:uploadSelection",
-      "sftp-deployment:downloadSelection",
+      "atom-sftp-sync:mapToRemote",
+      "atom-sftp-sync:uploadCurrentFile",
+      "atom-sftp-sync:uploadOpenFiles",
+      "atom-sftp-sync:downloadCurrentFile",
+      "atom-sftp-sync:uploadSelection",
+      "atom-sftp-sync:downloadSelection",
       "core:save"
     ]
   },
   "engines": {
-    "atom": ">0.50.0"
+    "atom": ">=1.20.0"
   },
   "scripts": {
-    "test": "make test"
+    "test": "atom --test spec",
+    "lint": "eslint lib"
   },
   "dependencies": {
     "ssh2": "^0.4.4",
@@ -39,8 +40,7 @@
     "atom-space-pen-views": "^2.0.3"
   },
   "devDependencies": {
-    "should": "latest",
-    "coveralls": "2.3.0"
+    "eslint": "^4.7.2"
   },
   "keywords": [
     "atom",
@@ -48,7 +48,8 @@
     "sftp",
     "ftp",
     "remote",
-    "deployment"
+    "deployment",
+    "sync"
   ],
   "license": "MIT"
 }
