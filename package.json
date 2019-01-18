@@ -1,7 +1,7 @@
 {
   "name": "sftp-deployment-fix",
   "description": "Fork from SFTP-Deployment (Ellipsis Team) with fixes for Atom 1.21+ compatibility",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": {
     "name": "Leonardo Matos",
     "email": "leomp120894@gmail.com"
