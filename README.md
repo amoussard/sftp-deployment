@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/amoussard/sftp-deployment.svg?branch=evol%2F3-upload-selection)](https://travis-ci.org/amoussard/sftp-deployment)
 [![Coverage Status](https://img.shields.io/coveralls/amoussard/sftp-deployment.svg)](https://coveralls.io/r/amoussard/sftp-deployment)
 
-#SFTP-Deployment for Atom.io
+# SFTP-Deployment for Atom.io
 
 Spend less time managing file transfers and more time coding. FTP and SFTP support for Atom.io to send and receive files directly in your server.
 
@@ -9,19 +9,19 @@ SFTP-Deployment is a package for Atom.io using [SSH2 client](https://github.com/
 
 ![SFTP-deployment](https://atom.io/assets/packages-d6c259ff67b995961012620be1e26678.gif "SFTP-deployment")
 
-##Features
+## Features
 
-###Workflows
+### Workflows
 * Upload/Download current file
 * Upload open files (tabs)
 * Upload/Download selection from Tree View
 
-###Compatibility
+### Compatibility
 * Supports FTP and SFTP servers
 * Password SSH support
 * Works on Windows, OS X and Linux
 
-###Integration
+### Integration
 * Menu entries and command palette control
 * File-based configuration (JSON)
 * Colorized output panel with options for automatic hiding
@@ -38,26 +38,26 @@ SFTP-Deployment is a package for Atom.io using [SSH2 client](https://github.com/
 
 The configuration file **MUST** always be in the root directory of your project.
 
-###Example of configuration file:
+### Example of configuration file:
 
-####SFTP with user/password :
+#### SFTP with user/password :
 ```
 {
     "type": "sftp",
     "host": "example.com",
-    "user": "username",
+    "username": "username",
     "password": "password",
     "port": "22",
     "remotePath": "/example/path"
 }
 ```
 
-####SFTP protocol with private key :
+#### SFTP protocol with private key :
 ```
 {
     "type": "sftp",
     "host": "example.com",
-    "user": "username",
+    "username": "username",
     "port": "22",
     "remotePath": "/example/path",
     "sshKeyFile": "~/.ssh/id_rsa",
@@ -66,7 +66,7 @@ The configuration file **MUST** always be in the root directory of your project.
 ```
 The passphrase is optional, only if your key require it.
 
-####FTP protocol :
+#### FTP protocol :
 ```
 {
   "type": "ftp",
@@ -78,18 +78,18 @@ The passphrase is optional, only if your key require it.
 }
 ```
 
-##Next Versions
+## Next Versions
 
 ###Workflows
 * Upload just the changes since your last commit
 * See upload/download progress
 * Synchronize in both directions
 
-###Integration
+### Integration
 * Keyboard shortcuts
 * Secure password and passphrase entry
 
-##Versions
+## Versions
 * `1.0.1`
   * Fix after Atom update
 * `1.0.0`
