@@ -45,7 +45,7 @@ The configuration file **MUST** always be in the root directory of your project.
 {
     "type": "sftp",
     "host": "example.com",
-    "user": "username",
+    "username": "username",
     "password": "password",
     "port": "22",
     "remotePath": "/example/path"
@@ -57,7 +57,7 @@ The configuration file **MUST** always be in the root directory of your project.
 {
     "type": "sftp",
     "host": "example.com",
-    "user": "username",
+    "username": "username",
     "port": "22",
     "remotePath": "/example/path",
     "sshKeyFile": "~/.ssh/id_rsa",
