@@ -80,7 +80,7 @@ The passphrase is optional, only if your key require it.
 
 ## Next Versions
 
-###Workflows
+### Workflows
 * Upload just the changes since your last commit
 * See upload/download progress
 * Synchronize in both directions
